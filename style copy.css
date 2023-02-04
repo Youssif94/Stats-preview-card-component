@@ -1,0 +1,120 @@
+
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+body{
+    font-family: Montserrat,Fraunces;
+    background-color: hsl(233, 47%, 7%);
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 00px 0px 10px;
+}
+
+.info{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info>div>div>h2{
+    color: white;
+}
+
+.img>img{
+    box-sizing:content-box;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;    
+}
+.a{
+    display: block;
+}
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-1{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-2{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subtitle{
+    color: hsl(277, 64%, 61%)
+}
+
+.info>div>div>h2{
+    font-weight: 800;
+}
+.info>div+div>p{
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sub-info>div>span:first-child{
+    color: white;
+    font-weight: 800;
+    font-size: large;
+}
+.sub-info>div>span:nth-child(2){
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 800;
+    font-size: large;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 00px 0px 10px;
+        background-color: hsl(233, 47%, 7%);
+    }
+    .img{
+        order: 1;
+    }
+    .img>img{
+        border-radius: 10px 10px 0px 0px;    
+        width: 100%;
+    }
+    .info{
+        order: 2;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .info-1,.info-2{
+        text-align: center;
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        height: 200px;
+        padding-bottom: 50px;
+    }
+  }
